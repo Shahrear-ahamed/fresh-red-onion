@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import ChooseUs from "../ChooseUs/ChooseUs";
 import HeroSection from "../HeroSection/HeroSection";
 import "./Home.css";
@@ -11,9 +11,24 @@ const Home = () => {
       <section>
         <div className="food-container">
           <div className="food-button">
-            <Link to="/breakfast">Breakfast</Link>
-            <Link to="/lunch">Lunch</Link>
-            <Link to="/dinner">Dinner</Link>
+            <NavLink
+              className={`link ${({ isActive }) => (isActive ? "active" : "")}`}
+              to="/breakfast"
+            >
+              Breakfast
+            </NavLink>
+            <NavLink
+              className={`link ${({ isActive }) => (isActive ? "active" : "")}`}
+              to="/lunch"
+            >
+              Lunch
+            </NavLink>
+            <NavLink
+              className={`link ${({ isActive }) => (isActive ? "active" : "")}`}
+              to="/dinner"
+            >
+              Dinner
+            </NavLink>
           </div>
           <div className="food-detail">
             <Outlet />
