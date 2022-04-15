@@ -1,11 +1,14 @@
-import React from 'react';
+import React from "react";
+import ChooseUs from "../ChooseUs/ChooseUs";
+import HeroSection from "../HeroSection/HeroSection";
 
 const Home = () => {
-    return (
-        <div>
-            <h2>Its Home</h2>
-        </div>
-    );
+  return (
+    <>
+      <HeroSection />
+      <ChooseUs />
+    </>
+  );
 };
 
 export default Home;

@@ -5,6 +5,7 @@ import Cart from "./Pages/cart/cart";
 import Login from "./Pages/Login/Login";
 import Navbar from "./Pages/Shared/Navbar/Navbar";
 import SignUp from "./Pages/SignUp/SignUp";
+import Footer from "./Pages/Shared/Footer/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
       </Routes>
+      <Footer />
     </>
   );
 }

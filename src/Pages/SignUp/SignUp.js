@@ -2,16 +2,49 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./SignUp.css";
 import logo from "../../asstes/images/logo/logo2.png";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import auth from "../../firebase.init";
+import {
+  useCreateUserWithEmailAndPassword,
+  useUpdateProfile,
+} from "react-firebase-hooks/auth";
 
 const SignUp = () => {
   const navigate = useNavigate();
+  const [createUserWithEmailAndPassword, , error] =
+    useCreateUserWithEmailAndPassword(auth);
+  const [updateProfile] = useUpdateProfile(auth);
 
-  const handleSubmit = (e) => {
+  // toast error are here
+  const notify = (data) => toast(data);
+
+  // form submit are here
+  const handleSubmit = async (e) => {
+    // prevent form loading part
     e.preventDefault();
-    console.log("submit");
+    // get input value are here
+    const name = e.target.name.value;
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    const confirmPassword = e.target.confirmPassword.value;
+
+    // error handaling part here
+    if (password === confirmPassword) {
+      await createUserWithEmailAndPassword(email, password);
+      await updateProfile({ displayName: name });
+      navigate("/");
+    } else {
+      notify("Password and Confirm password are not matched");
+    }
   };
+  if (error) {
+    notify(error);
+  }
+
+  // rendar
   return (
-    <div>
+    <div className="container">
       <div className="signup-logo">
         <img src={logo} alt="" />
       </div>
@@ -21,7 +54,7 @@ const SignUp = () => {
         <input type="text" name="password" placeholder="Password" required />
         <input
           type="text"
-          name="confirm-password"
+          name="confirmPassword"
           placeholder="Confirm Password"
           required
         />
@@ -37,6 +70,7 @@ const SignUp = () => {
           </small>
         </p>
       </form>
+      <ToastContainer />
     </div>
   );
 };
