@@ -1,0 +1,21 @@
+.food-container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 20px auto;
+}
+.food-button {
+  display: flex;
+  justify-content: center;
+}
+.food-button button {
+  margin: 0 20px;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.food-button button:active {
+  color: #e51a4b;
+  border-bottom: 2px solid #e51a4b;
+}
