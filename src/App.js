@@ -9,16 +9,24 @@ import Footer from "./Pages/Shared/Footer/Footer";
 import Dinner from "./Pages/Home/Dinner/Dinner";
 import Breakfast from "./Pages/Home/Breakfast/Breakfast";
 import Lunch from "./Pages/Home/Lunch/Lunch";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [foods, setFoods] = useState([]);
+  useEffect(() => {
+    fetch("foods.json")
+      .then((res) => res.json())
+      .then((data) => setFoods(data));
+  }, []);
   return (
     <>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}>
-          <Route path="breakfast" element={<Breakfast />} />
-          <Route path="lunch" element={<Lunch />} />
-          <Route path="dinner" element={<Dinner />} />
+          <Route index element={<Lunch foods={foods} />} />
+          <Route path="breakfast" element={<Breakfast foods={foods} />} />
+          <Route path="lunch" element={<Lunch foods={foods} />} />
+          <Route path="dinner" element={<Dinner foods={foods} />} />
         </Route>
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login />} />

@@ -1,0 +1,30 @@
+.single-food {
+  display: flex;
+  margin: 10px 0;
+  padding: 10px 0;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.25s ease-in;
+}
+.single-food:hover {
+  box-shadow: 1px 1px 9px 9px rgba(128, 128, 128, 0.129);
+}
+.single-food img {
+  width: 150px;
+  margin: 15px 0;
+}
+.single-food > h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.single-food > p {
+  font-weight: 400;
+  color: #838383;
+}
+.single-food > h3 {
+  font-weight: 500;
+  font-size: 23px;
+}
