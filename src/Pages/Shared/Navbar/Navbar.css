@@ -1,0 +1,43 @@
+.navbar {
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo {
+  display: grid;
+  align-items: center;
+}
+.logo img {
+  height: 45px;
+  cursor: pointer;
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+}
+.pages img {
+  height: 25px;
+  cursor: pointer;
+}
+.pages a {
+  margin-left: 30px;
+  text-decoration: none;
+}
+.login{
+  color: black;
+  font-weight: 500;
+}
+.signup {
+  display: inline-block;
+  padding: 10px 35px;
+  background-color: #e51a4b;
+  border-radius: 25px;
+  color: white;
+  font-weight: 500;
+}
