@@ -9,6 +9,8 @@ const ViewFood = ({ foods }) => {
   const { name, desc, img, price } =
     foods.find((food) => food.id === param.id) || {};
 
+  const totalPrice = price * items;
+
   return (
     <div className="viewfood">
       <div className="view-food-left">
@@ -16,7 +18,7 @@ const ViewFood = ({ foods }) => {
           <h2>{name}</h2>
           <p>{desc}</p>
           <div className="price-button">
-            <h3 className="price-title">${price}</h3>
+            <h3 className="price-title">${totalPrice}</h3>
             <div className="item-buttons">
               <button
                 disabled={items <= 1 && true}
