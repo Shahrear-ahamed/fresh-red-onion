@@ -6,11 +6,9 @@ import { ShoppingCartIcon } from "@heroicons/react/solid";
 const ViewFood = ({ foods }) => {
   const [items, setItems] = useState(1);
   const param = useParams();
-  const { name, desc, img, price, category } = foods.find(
-    (food) => food.id === param.id
-  );
-  const totalFood = foods.filter((food) => food.category === category);
-  console.log(totalFood);
+  const { name, desc, img, price } =
+    foods.find((food) => food.id === param.id) || {};
+
   return (
     <div className="viewfood">
       <div className="view-food-left">
@@ -43,5 +41,4 @@ const ViewFood = ({ foods }) => {
     </div>
   );
 };
-
 export default ViewFood;

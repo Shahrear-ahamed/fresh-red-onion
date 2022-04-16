@@ -1,70 +1,146 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[
+  {
+    "id": "6259a19dee0208dd9a895eb7",
+    "img": "https://i.ibb.co/Zddj821/breakfast1.png",
+    "category": "breakfast",
+    "price": "8.99",
+    "name": "Eggs Benedict",
+    "desc": "How we dreambreakfastabout our future"
+  },
+  {
+    "id": "6259a19d96e16da94f9378fc",
+    "img": "https://i.ibb.co/5nKwSkn/breakfast2.png",
+    "category": "breakfast",
+    "price": "9.99",
+    "name": "Breakfast sandwich",
+    "desc": "How we dream about our future"
+  },
+  {
+    "id": "6259a19d45eef8a90a547295",
+    "img": "https://i.ibb.co/s3DmCFr/breakfast3.png",
+    "category": "breakfast",
+    "price": "10.99",
+    "name": "Baked Chiken",
+    "desc": "How we dream about our future"
+  },
+  {
+    "id": "6259a19d4a1d1920765c229a",
+    "img": "https://i.ibb.co/2sHT101/breakfast4.png",
+    "category": "breakfast",
+    "price": "6.99",
+    "name": "Bagel and cream cheese",
+    "desc": "How we dream about our future"
+  },
+  {
+    "id": "6259a19d8b6ae3b0f4b17b67",
+    "img": "https://i.ibb.co/nmkk2QF/breakfast5.png",
+    "category": "breakfast",
+    "price": "3.99",
+    "name": "Full Freakfast Fried Egg toast Brunch",
+    "desc": "How we dream about our future"
+  },
+  {
+    "id": "6259a19d03e6a948bb4e9fb8",
+    "img": "https://i.ibb.co/86vVrT5/breakfast6.png",
+    "category": "breakfast",
+    "price": "19.99",
+    "name": "Toast Croissant Fried egg",
+    "desc": "How we dream about our future"
+  },
+  {
+    "id": "6259a29b4a8479b0d495a045",
+    "img": "https://i.ibb.co/L88NZvN/lunch2.png",
+    "category": "lunch",
+    "price": "7.99",
+    "name": "Honey soy glazed salmon with peppers",
+    "desc": "How we dream about our future"
+  },
+  {
+    "id": "6259a29b6520ad6a8019aed5",
+    "img": "https://i.ibb.co/rcbftRg/lunch3.png",
+    "category": "lunch",
+    "price": "6.99",
+    "name": "Tarragon Rubbed Salmon",
+    "desc": "How we dream about our future"
+  },
+  {
+    "id": "6259a29bfdc77ad52ab07999",
+    "img": "https://i.ibb.co/j8vvRZY/lunch6.png",
+    "category": "lunch",
+    "price": "23.99",
+    "name": "Healthy Meal Plan",
+    "desc": "How we dream about our future"
+  },
+  {
+    "id": "6259a29bb95596fa2f1640ae",
+    "img": "https://i.ibb.co/QJMspRP/lunch1.png",
+    "category": "lunch",
+    "price": "15.99",
+    "name": "Beef Steak",
+    "desc": "How we dream about our future"
+  },
+  {
+    "id": "6259a29bf86a6e4d4aa246f5",
+    "img": "https://i.ibb.co/HtS3KRX/lunch4.png2",
+    "category": "lunch",
+    "price": "8.99",
+    "name": "Indian Lunch",
+    "desc": "How we dream about our future"
+  },
+  {
+    "id": "6259a29b202aa46adb9a9e96",
+    "img": "https://i.ibb.co/JnCykss/lunch5.png",
+    "category": "lunch",
+    "price": "9.99",
+    "name": "Fried Chicken Bento",
+    "desc": "How we dream about our future"
+  },
+  {
+    "id": "6259a2ed9ce5967ebc0f882b",
+    "img": "https://i.ibb.co/HG8Xhvn/dinner5.png",
+    "category": "dinner",
+    "price": "10.99",
+    "name": "Lemon Salmon Piccata",
+    "desc": "How we dream about our future"
+  },
+  {
+    "id": "6259a2ed071080a1d6f4461b",
+    "img": "https://i.ibb.co/1rLvVfH/dinner4.png",
+    "category": "dinner",
+    "price": "12.99",
+    "name": "Pork Tenderloin with Quinoa Pilaf",
+    "desc": "How we dream about our future"
+  },
+  {
+    "id": "6259a2ed5406ec3972466072",
+    "img": "https://i.ibb.co/fGdLf5F/dinner3.png",
+    "category": "dinner",
+    "price": "8.99",
+    "name": "French fries with cheese",
+    "desc": "How we dream about our future"
+  },
+  {
+    "id": "6259a2ed587e21b7f4383b9a",
+    "img": "https://i.ibb.co/f1VHXWV/dinner2.png",
+    "category": "dinner",
+    "price": "6.99",
+    "name": "Garlic Butter Baked Salmon",
+    "desc": "How we dream about our future"
+  },
+  {
+    "id": "6259a2ed8f65ecdfe5c9c225",
+    "img": "https://i.ibb.co/ynM4mSP/dinner1.png",
+    "category": "dinner",
+    "price": "9.99",
+    "name": "Baked Chicken",
+    "desc": "How we dream about our future"
+  },
+  {
+    "id": "6259a2edf19b340794457256",
+    "img": "https://i.ibb.co/56zxqq0/dinner6.png",
+    "category": "dinner",
+    "price": "9.99",
+    "name": "Salmon with graperfruit and lentil salad",
+    "desc": "How we dream about our future"
+  }
+]

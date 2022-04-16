@@ -16,7 +16,7 @@ import ViewFood from "./Pages/Home/ViewFood/ViewFood";
 function App() {
   const [foods, setFoods] = useState([]);
   useEffect(() => {
-    fetch("foods.json")
+    fetch("https://shahrear-ahamed.github.io/fetch-api/foods.json")
       .then((res) => res.json())
       .then((data) => setFoods(data));
   }, []);
