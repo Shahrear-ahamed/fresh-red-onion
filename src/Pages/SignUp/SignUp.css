@@ -23,12 +23,21 @@
   justify-content: center;
 }
 
-.sign-up-form input:not([type="submit"]) {
+.sign-up-form input:not([type="submit"]),
+.sign-up-form textarea,
+.shipping-form input:not([type="submit"]),
+.shipping-form textarea {
   border: none;
   margin: 10px 0;
   padding: 15px 10px;
   background-color: rgb(230, 230, 230);
   border-radius: 4px;
+}
+.sign-up-form input:not([type="submit"]):focus,
+.sign-up-form textarea:focus,
+.shipping-form input:not([type="submit"]),
+.shipping-form textarea {
+  outline: none;
 }
 
 .form-submit {

@@ -1,0 +1,25 @@
+.place-order {
+  display: grid;
+  margin: 50px 0;
+  grid-template-columns: repeat(2, 1fr);
+}
+.delevery-details-title {
+  width: 80%;
+  padding-bottom: 10px;
+  font-weight: 500;
+  border-bottom: 1px solid black;
+}
+.shipping-form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+textarea{
+  resize: none;
+}
+@media (max-width: 576px) {
+  .place-order {
+    grid-template-columns: 1fr;
+  }
+}

@@ -33,9 +33,9 @@ const Login = () => {
       <div className="signup-logo">
         <img src={logo} alt="" />
       </div>
-      <form className="sign-up-form" onSubmit={handleSubmit}>
+      <form autoComplete="off" className="sign-up-form" onSubmit={handleSubmit}>
         <input type="text" name="email" placeholder="Email" required />
-        <input type="text" name="password" placeholder="Password" required />
+        <input type="password" name="password" placeholder="Password" required />
         <input
           type="submit"
           name="submit"

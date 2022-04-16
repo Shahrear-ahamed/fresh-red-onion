@@ -11,22 +11,46 @@
 .left-desc h2 {
   font-size: 40px;
   font-weight: 400;
+  line-height: 1.2;
 }
 .left-desc p {
   margin: 20px 0;
 }
-
+.price-button {
+  display: flex;
+  align-items: center;
+}
 .price-title {
   font-size: 27px;
   font-weight: 400;
   margin-right: 10px;
+}
+.item-buttons {
+  display: flex;
+  align-items: center;
+  border: 1px solid #cfcfcf;
+  height: 45px;
+  padding: 0 15px;
+  border-radius: 25px;
+  margin-left: 10px;
+}
+.item-buttons p {
+  width: 15px;
+  text-align: center;
+}
+.item-buttons button {
+  background-color: transparent;
+  border: none;
+  margin: 0 10px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .shopping-cart-btn {
   display: flex;
   align-items: center;
   padding: 10px 30px;
-  background-color: red;
+  background-color: #e51a4b;
   border: none;
   color: white;
   font-size: 16px;
@@ -48,4 +72,17 @@
 }
 .view-food-right img {
   width: 85%;
+}
+
+@media (max-width: 576px) {
+  .viewfood {
+    width: 95%;
+    grid-template-columns: 1fr;
+  }
+  .view-food-left {
+    order: 2;
+  }
+  .left-desc h2 {
+    font-size: 25px;
+  }
 }
