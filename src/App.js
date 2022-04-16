@@ -10,6 +10,8 @@ import Dinner from "./Pages/Home/Dinner/Dinner";
 import Breakfast from "./Pages/Home/Breakfast/Breakfast";
 import Lunch from "./Pages/Home/Lunch/Lunch";
 import { useEffect, useState } from "react";
+import Placeorder from "./Pages/Home/Placeorder/Placeorder";
+import ViewFood from "./Pages/Home/ViewFood/ViewFood";
 
 function App() {
   const [foods, setFoods] = useState([]);
@@ -27,6 +29,8 @@ function App() {
           <Route path="breakfast" element={<Breakfast foods={foods} />} />
           <Route path="lunch" element={<Lunch foods={foods} />} />
           <Route path="dinner" element={<Dinner foods={foods} />} />
+          <Route path="placeorder" element={<Placeorder />} />
+          <Route path="food/:id" element={<ViewFood foods={foods}/>} />
         </Route>
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login />} />

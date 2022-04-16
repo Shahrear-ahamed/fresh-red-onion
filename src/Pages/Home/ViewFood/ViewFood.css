@@ -1,0 +1,51 @@
+.viewfood {
+  width: 90%;
+  display: grid;
+  max-width: 1150px;
+  margin: 50px auto;
+  grid-template-columns: repeat(2, 1fr);
+}
+.view-food-left {
+  padding: 30px 20px;
+}
+.left-desc h2 {
+  font-size: 40px;
+  font-weight: 400;
+}
+.left-desc p {
+  margin: 20px 0;
+}
+
+.price-title {
+  font-size: 27px;
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+.shopping-cart-btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 25px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.shopping-cart-btn .cart-icon {
+  color: white;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.view-food-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.view-food-right img {
+  width: 85%;
+}

@@ -30,7 +30,7 @@ const Home = () => {
               Dinner
             </NavLink>
           </div>
-          <div className="food-detail">
+          <div>
             <Outlet />
           </div>
         </div>
